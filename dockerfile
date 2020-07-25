@@ -1,8 +1,8 @@
 pipeline {
 environment {
-registry = "YourDockerhubAccount/YourRepository"
+registry = "sahu123/nginx-http:latest"
 registryCredential = 'sahu123'
-dockerImage = 'nginx'
+dockerImage = 'nginx-http'
 }
 agent any
 stages {

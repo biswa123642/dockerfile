@@ -1,14 +1,14 @@
 pipeline {
 environment {
-registry = "sahu123/nginx-http:latest"
-registryCredential = 'sahu123'
-dockerImage = 'nginx-http'
+registry = "sahu123/my_image"
+registryCredential = 'dockerhub'
+dockerImage = 'test_image'
 }
 agent any
 stages {
 stage('Cloning our Git') {
 steps {
-git 'https://github.com/YourGithubAccount/YourGithubRepository.git'
+git 'https://github.com/biswa123642/dockerfile.git'
 }
 }
 stage('Building our image') {

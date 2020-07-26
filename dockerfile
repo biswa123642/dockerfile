@@ -1,6 +1,6 @@
 pipeline {
 environment {
-registry = "sahu123/my_image:3"
+registry = "sahu123/my_image:3:4"
 registryCredential = 'dockerhub'
 dockerImage = 'my_image'
 }

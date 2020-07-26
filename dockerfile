@@ -1,8 +1,8 @@
 pipeline {
 environment {
-registry = "sahu123/my_image"
+registry = "sahu123/my_image:3"
 registryCredential = 'dockerhub'
-dockerImage = 'test_image'
+dockerImage = 'my_image'
 }
 agent any
 stages {
